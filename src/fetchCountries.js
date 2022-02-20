@@ -2,12 +2,12 @@
 const BASE_URL = 'https://restcountries.com/v3.1';
 
 export const fetchCountries= (name) =>{
-  return fetch(`${BASE_URL}/all?fields=name,capital,population,flags,languages`).then(
+  return fetch(`${BASE_URL}/name/${name}`).then(
     response => {
       if (!response.ok) {
         throw new Error(response.status);
       }
-      // --получаем распарсенный массив обьектов:
+      // --получаем промис распарсенных массивов обьектов:
       return response.json();
     },
   );

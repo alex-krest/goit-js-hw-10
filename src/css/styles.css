@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 body {
@@ -12,9 +13,26 @@ body {
   line-height: 1.5;
 }
 
+
 #search-box {
   font: inherit;
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+}
+ul{
+	padding: 0;
+}
+.top-card,
+.small-country{
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-weight: 700;
+}
+img{
+margin-right: 10px;
+}
+.capital{
+	/* font-weight: 700; */
 }
